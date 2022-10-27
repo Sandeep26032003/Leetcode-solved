@@ -1,0 +1,7 @@
+class Solution:
+    def isSameAfterReversals(self, num: int) -> bool:
+        string = str(num)
+        fnum = string.rstrip("0")
+        if len(string) == 1:
+            return True
+        return len(string) == len(fnum)
